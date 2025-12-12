@@ -189,7 +189,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: TOP
+  m_Text: NEXT
 --- !u!222 &42008558
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -416,7 +416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3678a4e4aa2c4c42b27839a3c0ea0e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 
+  sceneName: omiya
 --- !u!114 &433054529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1136,6 +1136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db7539bf309274346bda656e888180a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clearCanvas: {fileID: 439510609}
 --- !u!1 &959552057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,6 +1414,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &961753891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 961753893}
+  - component: {fileID: 961753892}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &961753892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961753891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3678a4e4aa2c4c42b27839a3c0ea0e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: tokyo
+--- !u!4 &961753893
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961753891}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6076167, y: 0.6372889, z: -0.066285}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1751743426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1593,3 +1639,4 @@ SceneRoots:
   - {fileID: 780918313}
   - {fileID: 384612838}
   - {fileID: 439510613}
+  - {fileID: 961753893}

@@ -11,5 +11,13 @@ public class Scene : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
-
+    void Update()
+    {
+        Debug.Log("アップデート");
+        
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+    }
 }

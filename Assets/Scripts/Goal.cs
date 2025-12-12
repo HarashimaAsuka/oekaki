@@ -1,10 +1,16 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Goal : MonoBehaviour
 {
     float duration;
     bool stay;
+    public GameObject clearCanvas;
 
+    void Start()
+    {
+        clearCanvas.gameObject.SetActive(false);
+    }
 
     void Update()
     {
@@ -14,6 +20,7 @@ public class Goal : MonoBehaviour
             // ３秒経過でゴールと判定
             if (this.duration > 3.0f)
             {
+                clearCanvas.gameObject.SetActive(true);
                 Debug.Log("Clear!!");
             }
         }
