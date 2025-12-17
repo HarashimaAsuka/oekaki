@@ -13,8 +13,6 @@ public class Scene : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("アップデート");
-        
         if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(sceneName);
